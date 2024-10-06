@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -5;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+header .container{
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+}
+
+nav{
+    margin-right: 75px;
+}
+
+.btn_nav{
+    font-size: 16px;
+}
+
+.btn_nav:not(:last-child){
+    margin-right: 20px;
+}
+
+.btn_login{
+    padding: 15px 25px;
+    background: linear-gradient(#fe8464, #fe6e9a);
+    border-radius: 12px;
+}
+
+.title{
+    margin-top: 120px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.btn_start{
+    display: block;
+    align-items: center;
+    padding: 15px 25px;
+    width: max-content;
+    margin: 10px auto;
+    background: linear-gradient(90deg, #33c8c1, #119bd2);
+    border-radius: 12px;
+}
+
+.desktop{
+    width: 650px;
+    margin: 0 auto;
+    display: block;
+}
+
+.sponsors .container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 1000px;
+    grid-gap: 10px;
+}
+
+.sponsors .container img{
+    width: 125px;
+    opacity: 0.5;
+    transition: opacity .3s linear;
+}
+
+.sponsors .container img:hover{
+    opacity: 1;
+}
+
+.sponsors{
+    margin-top: 85px;
+}
+
+.title_block{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.title_block:before{
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: linear-gradient(#fe8464, #fe6e9a);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15px;
+}
+
+.features_block{
+    margin-top: 60px;
+}
+
+.card{
+    width: 350px;
+    height: 425px;
+    border: 2px solid #fff;
+    padding: 50px 30px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    position: relative;
+}
+
+.img{
+    position: relative;
+    width: 100%;
+}
+
+.shape_bg{
+    position: relative;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    transition: .3s;
+}
+
+.shape_img{
+    top: 18px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%) rotate(0);
+}
+
+.card:hover > .img img:first-child{
+    transform: translateX(-50%) rotate(15deg);
+}
+
+.card h2{
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.desc{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #5e5e5e;
+    display: block;
+    width: 100%;
+    line-height: 26px;
+    cursor: default;
+}
+
+.card a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover{
+    border: 2px solid #fe8464;
+    transition: all .4s linear;
+}
+
+.item{
+    display: grid;
+    grid-template-areas: "text img";
+    grid-gap: 45px;
+    margin-bottom: 30px;
+}
+
+.item-text{
+    grid-area: text;
+    margin-top: 30px;
+}
+
+.item_img{
+    grid-area: img;
+    width: 540px;
+}
+
+.item-text .title_block, .why_text .title_block{
+    text-align: start;
+}
+
+.item-text .title_block:before, .why_text .title_block:before{
+    left: 13%;
+}
+
+.item-text span{
+    display: block;
+}
+
+.item-text .btn_login{
+    display: block;
+    margin-top: 25px;
+    width: max-content;
+}
+
+.item-text .desc, .why_text .desc{
+    text-align: start;
+}
+
+.reverse{
+    grid-template-areas: "img text";
+}
+
+.about{
+    margin-top: 35px;
+}
+
+.why .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.why_img{
+    position: relative;
+}
+
+.dots{
+    position: absolute;
+    bottom: -13px;
+    left: -35px;
+    z-index: -2;
+}
+
+.video{
+    width: 525px;
+}
+
+.why_img label{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    color: #fe8464;
+}
+
+.why_text{
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+.why_text .desc{
+    margin-top: 50px;
+}
+
+.popup_window{
+    display: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 99;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.51);
+}
+
+.video_da{
+    width: 720px;
+    height: 480px;
+    background: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.popup_window label{
+    position: relative;
+    top: 18%;
+    left: 72.8%;
+    color: white;
+    z-index: 100;
+}
+
+#window:checked ~ .popup_window{
+    display: block;
+}
+
+#window{
+    display: none;
+}
+
+.bean{
+    width: 155px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#33c8c1, #119bd2);
+    border-radius: 75px;
+    transform: rotateZ(-45deg);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bean h1, .bean span{
+    transform: rotateZ(45deg);
+}
+
+.bean h1{
+    margin-left: 25px;
+}
+
+.bean span{
+    margin-left: -35px;
+}
+
+.beans{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin: 25px auto 0;
+}
+
+.bean_2{
+    background: linear-gradient(#fe8464, #fe6e9a);
+}
+
+.bean_3{
+    background: linear-gradient(#361cc1, #2e82ef);
+}
+
+.team{
+    margin-top: 75px;
+}
+
+.member{
+    width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.member img{
+    width: 350px;
+}
+
+.member h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.teams{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
